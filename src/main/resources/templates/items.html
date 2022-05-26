@@ -7,12 +7,17 @@
 </head>
 <body>
 <div class="mainBox">
-    <div class="titleDiv">
+    <div class=”Header”>
         <h2 th:text="${itemTitle}"></h2>
     </div>
     <div class="itemsDiv">
         <table>
-            <tbody class="hej">
+            <thead>
+            <tr>
+                <td>Item number</td>
+                <td>Item name</td>
+            </tr>
+            <tbody class="itemList">
             <tr th:each="cap : ${allItems}">
                 <td th:text="${cap.itemNumber}"></td>
                 <td th:text="${cap.name}"></td>
@@ -21,8 +26,5 @@
         </table>
     </div>
 </div>
-
-
-<h2 class="fredrik">by Fredrik aka "Gabe Itch"</h2>
 </body>
 </html>

@@ -39,7 +39,7 @@ public class RestService {
         model.addAttribute("allItems", r);
         model.addAttribute("itemNumber", "item number");
         model.addAttribute("name", "Name");
-        model.addAttribute("itemTitle", "All items");
+        model.addAttribute("itemTitle", "Items in stock");
         return "items";
     }
 
